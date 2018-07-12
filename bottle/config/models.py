@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from sqlalchemy import Table, Column, Integer, String, ForeignKey, Float
+from sqlalchemy import Table, Column, Integer, String, ForeignKey, Float,Blob
 from config.database import Base
 # http://docs.sqlalchemy.org/en/latest/orm/basic_relationships.html
-"""
+
 class TipoEstacion(Base):
   __tablename__ = 'tipo_estaciones'
   id = Column(Integer, primary_key=True)
@@ -17,7 +17,7 @@ class Estacion(Base):
   longitud = Column(Float)
   altura = Column(Float)
   tipo_estacion_id = Column(Integer, ForeignKey('tipo_estaciones.id'))
-"""
+
 #Tablas del sql en python
 class Usuarios(Base):
   __tablename__ = 'Usuario'
